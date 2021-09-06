@@ -4,6 +4,9 @@
     <head>
         <meta charset='utf-8'>
         <title>Nifty Octopus</title>
+        <link rel='preconnect' href='https://fonts.googleapis.com'>
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+        <link href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap' rel='stylesheet'> 
 
         <style>
             html, body {
@@ -12,21 +15,29 @@
             }
 
             body {
-                display:         flex;
-                justify-content: center;
-                align-items:     center;
-                overflow:        hidden;
+                display:            flex;
+                flex-flow:          column nowrap;
+                justify-content:    center;
+                align-items:        center;
+                background-color: #a0d9f8;
+                font-family:       'Roboto Mono', monospace;
+                color:            #002e4d;
             }
 
-            div {
-                font-size: 5em;
-                font-family: 'Courier New', Courier, monospace;
+            h1 {
+                font-weight: 300;
             }
+
+            img {
+                height: 25%;
+            }
+
+            /* Ocean Colors 0c6a9e 004c7e 477290 92a0a3 */
         </style>
     </head>
 
     <body>
-        <div>Nifty Octopus</div>
-        <div>***</div>
+        <img src='sea_creatures_1b.png'>
+        <h1>Nifty Octopus</h1>
     </body>
 </html>
