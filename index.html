@@ -10,31 +10,183 @@
 
         <style>
             html, body {
-                height: 100%;
+                min-height: 100%;
                 margin: 0;
             }
-
+            
             body {
-                display:         flex;
-                flex-flow:       column nowrap;
-                justify-content: center;
-                align-items:     center;
+                text-align: center;
+                padding-top: 10%;
                 background:      linear-gradient(45deg, #7594f0, #a3e0f5, #d2f9ef);
                 font-family:    'Roboto Mono', monospace;
                 color:         #002e4d;
             }
 
             h1 {
-                font-size:   4em;
+                font-size:   3em;
                 font-weight: 300;
             }
 
             /* Ocean Colors 0c6a9e 004c7e 477290 92a0a3 */
+
+            #octopus {
+                width: 5vw;
+                height: 5vw;
+                margin: 0 auto;
+            }
+
+            #octopus #head {
+                z-index: 3;
+                position: relative;
+                /* top: 50%; */
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                outline: 2px solid blue;
+                border-radius: 50%;
+                background-color: skyblue;
+            }
+
+            #octopus #face {
+                height: 80%;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            #octopus #eyes {
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            #octopus .eye {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.3)
+            }
+
+            #octopus .eye > div {
+                width: 25%;
+                height: 25%;
+                /* border: 1px solid black; */
+                border-radius: 50%;
+                /* background-color: black; */
+            }
+
+            #octopus #mouth {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #octopus #mouth > div {
+                display: none;
+                width: 20%;
+                height: 100%;
+                border: 1px solid black;
+                border-top: 0;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+            }
+
+            #octopus #legs {
+                /* z-index: 1; */
+                position: relative;
+                top: -50%;
+                width: 100%;
+                height: 70%;
+            }
+
+            #octopus .legs {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #octopus .legs > div {
+                width: 10%;
+                height: 100%;
+                border-radius: 50% / 10%;
+            }
+
+            #octopus #legs #rear > div:first-child {
+                margin-left: 15%;
+            }
+
+            #octopus #legs #rear > div:last-child {
+                margin-right: 15%;
+            }
+
+            #octopus #legs #front > div  {
+                z-index: 2;
+                background-color: blue;
+            }
+
+
+            #octopus #legs #rear > div {
+                z-index: 1;
+                height: 95%;
+                opacity: 60%;
+                background-color: darkblue;
+            }
+
+            #projects > div {
+                margin-bottom: 100px;
+            }
         </style>
     </head>
 
     <body>
-        <img src='octopus_750px.png'>
+        <div id='octopus'>
+            <div id='head'>
+                <div id='face'>
+                    <div id='eyes'>
+                        <div class='eye'><div></div></div>
+                        <div class='eye'><div></div></div>
+                    </div>
+
+                    <div id='mouth'>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id='legs'>
+                <div id='front' class='legs'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div id='rear' class='legs'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
         <h1>Nifty Octopus</h1>
+
+        <div id='projects'>
+            <div></div>
+        </div>
     </body>
 </html>
