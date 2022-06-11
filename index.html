@@ -47,7 +47,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border: 2px solid #7594f0;
+                /* border: 2px solid #7594f0; */
                 border-radius: 50%;
                 background-color: #7594f0;
             }
@@ -57,50 +57,67 @@
                 width: 80%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: center;
             }
 
             #octopus #eyes {
                 width: 100%;
-                height: 30%;
+                height: 25%;
                 display: flex;
                 justify-content: space-evenly;
             }
 
             #octopus .eye {
-                width: 30%;
+                position: relative;
+                width: 25%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border: 2px solid black;
-                border-radius: 50%;
-                background-color: rgba(255, 255, 255, 0.3)
+                /* border: 2px solid black; */
+                border-radius: 100%;
+                background-color: #262626;
             }
 
             #octopus .eye > div {
-                width: 25%;
-                height: 25%;
+                position: absolute;
+                top: 20%;
+                right: 20%;
+                width: 30%;
+                height: 30%;
                 /* border: 1px solid black; */
                 border-radius: 50%;
-                /* background-color: black; */
+                background-color: white;
             }
 
             #octopus #mouth {
+                position: relative;
                 width: 100%;
                 height: 20%;
                 display: flex;
                 justify-content: center;
+                /* border: 1px dashed black; */
             }
 
-            #octopus #mouth > div {
-                display: none;
+            #octopus #mouth > div:first-child {
+                /* display: none; */
                 width: 20%;
                 height: 100%;
-                border: 1px solid black;
-                border-top: 0;
-                border-bottom-right-radius: 50%;
-                border-bottom-left-radius: 50%;
+                border: 1px solid #262626;
+                /* border-top: 0; */
+                /* border-bottom-right-radius: 50%; */
+                /* border-bottom-left-radius: 50%; */
+                border-radius: 50%;
+                /* background-color: black; */
+            }
+
+            #octopus #mouth > div:last-child {
+                position: absolute;
+                top: -10%;
+                width: 100%;
+                height: 90%;
+                background-color: #7594f0;
+                /* border: 1px solid white; */
             }
 
             #octopus #legs {
@@ -109,7 +126,7 @@
                 top: -50%;
                 width: 100%;
                 height: 70%;
-                border: 2px solid rgba(0, 0, 0, 0);
+                /* border: 2px solid rgba(0, 0, 0, 0); */
             }
 
             #octopus .legs {
@@ -119,28 +136,26 @@
                 width: 100%;
                 height: 100%;
                 display: flex;
-                justify-content: space-between;
             }
 
             #octopus .legs > div {
-                width: 10%;
+                width: 17%;
                 height: 100%;
-                border-radius: 50% / 10%;
+                border-radius: 50% / 15%;
             }
 
-            #octopus #legs #rear > div:first-child {
-                margin-left: 15%;
+            #octopus #legs #front {
+                justify-content: space-between;
             }
 
-            #octopus #legs #rear > div:last-child {
-                margin-right: 15%;
+            #octopus #legs #rear {
+                justify-content: space-around;
             }
 
             #octopus #legs #front > div  {
                 z-index: 2;
                 background-color: #7594f0;
             }
-
 
             #octopus #legs #rear > div {
                 z-index: 1;
@@ -165,6 +180,7 @@
                     </div>
 
                     <div id='mouth'>
+                        <div></div>
                         <div></div>
                     </div>
                 </div>
