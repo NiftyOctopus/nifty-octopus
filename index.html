@@ -6,6 +6,8 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
 
         <title>Nifty Octopus</title>
+        <link rel='stylesheet' href='octopus.css'>
+
         <link rel='preconnect' href='https://fonts.googleapis.com'>
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
         <link href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap' rel='stylesheet'> 
@@ -31,139 +33,6 @@
 
             /* Ocean Colors 0c6a9e 004c7e 477290 92a0a3 */
 
-            #octopus {
-                width: 4em;
-                height: 4em;
-                margin: 0 auto;
-            }
-
-            #octopus #head {
-                z-index: 3;
-                position: relative;
-                /* top: 50%; */
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                /* border: 2px solid #7594f0; */
-                border-radius: 50%;
-                background-color: #7594f0;
-            }
-
-            #octopus #face {
-                height: 80%;
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            #octopus #eyes {
-                width: 100%;
-                height: 25%;
-                display: flex;
-                justify-content: space-evenly;
-            }
-
-            #octopus .eye {
-                position: relative;
-                width: 25%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                /* border: 2px solid black; */
-                border-radius: 100%;
-                background-color: #262626;
-            }
-
-            #octopus .eye > div {
-                position: absolute;
-                top: 20%;
-                right: 20%;
-                width: 30%;
-                height: 30%;
-                /* border: 1px solid black; */
-                border-radius: 50%;
-                background-color: white;
-            }
-
-            #octopus #mouth {
-                position: relative;
-                width: 100%;
-                height: 20%;
-                display: flex;
-                justify-content: center;
-                /* border: 1px dashed black; */
-            }
-
-            #octopus #mouth > div:first-child {
-                /* display: none; */
-                width: 20%;
-                height: 100%;
-                border: 1px solid #262626;
-                /* border-top: 0; */
-                /* border-bottom-right-radius: 50%; */
-                /* border-bottom-left-radius: 50%; */
-                border-radius: 50%;
-                /* background-color: black; */
-            }
-
-            #octopus #mouth > div:last-child {
-                position: absolute;
-                top: -10%;
-                width: 100%;
-                height: 90%;
-                background-color: #7594f0;
-                /* border: 1px solid white; */
-            }
-
-            #octopus #legs {
-                /* z-index: 1; */
-                position: relative;
-                top: -50%;
-                width: 100%;
-                height: 70%;
-                /* border: 2px solid rgba(0, 0, 0, 0); */
-            }
-
-            #octopus .legs {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-            }
-
-            #octopus .legs > div {
-                width: 17%;
-                height: 100%;
-                border-radius: 50% / 15%;
-            }
-
-            #octopus #legs #front {
-                justify-content: space-between;
-            }
-
-            #octopus #legs #rear {
-                justify-content: space-around;
-            }
-
-            #octopus #legs #front > div  {
-                z-index: 2;
-                background-color: #7594f0;
-            }
-
-            #octopus #legs #rear > div {
-                z-index: 1;
-                height: 95%;
-                opacity: 60%;
-                background-color: #7594f0;
-            }
-
             #projects > div {
                 margin-bottom: 100px;
             }
@@ -173,39 +42,42 @@
     <body>
         <div id='octopus'>
             <div id='head'>
-                <div id='face'>
-                    <div id='eyes'>
-                        <div class='eye'><div></div></div>
-                        <div class='eye'><div></div></div>
-                    </div>
-
-                    <div id='mouth'>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
+                <div></div>
             </div>
             
             <div id='legs'>
-                <div id='front' class='legs'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-                <div id='rear' class='legs'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
         
         <h1>Nifty Octopus</h1>
 
-        <div id='projects'>
-            <div></div>
+        <div class='project'>
+            <div class='header'>
+                <h3>Lychee List</h3>
+            </div>
+
+            <p>This is the project description</p>
+        </div>
+
+        <div class='project'>
+            <div class='header'>
+                <h3>Represent</h3>
+            </div>
+
+            <p>This is the project description</p>
+        </div>
+
+        <div class='project'>
+            <div class='header'>
+                <h3>Let it Snow</h3>
+            </div>
+
+            <p>This is the project description</p>
         </div>
     </body>
 </html>
