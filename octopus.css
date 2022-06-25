@@ -1,7 +1,18 @@
 #octopus {
     width: 3em;
     height: 3em;
-    margin: 0 auto;
+    margin: 1em;
+}
+
+.bob {
+    animation: bob 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bob {
+    0%   { transform: translate(0%,   0%); }
+    30%  { transform: translate(0%, -15%); }
+    100% { transform: translate(0%,   0%); }
 }
 
 #octopus #head {

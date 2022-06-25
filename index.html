@@ -14,33 +14,67 @@
 
         <style>
             html, body {
-                min-height: 100%;
+                min-height: 100vh;
                 margin: 0;
             }
             
             body {
-                text-align: center;
-                padding-top: 10%;
-                background:      linear-gradient(45deg, #7594f0, #a3e0f5, #d2f9ef);
-                font-family:    'Roboto Mono', monospace;
-                color:         #002e4d;
-            }
-
-            h1 {
-                font-size:   2em;
-                font-weight: 300;
+                background:   linear-gradient(45deg, #7594f0, #a3e0f5, #d2f9ef);
+                font-family: 'Roboto Mono', monospace;
+                font-weight:  300;
+                color:      #002e4d;
+                
+                display:         flex;
+                flex-direction:  column;
+                justify-content: flex-start;
+                align-items:     center;
             }
 
             /* Ocean Colors 0c6a9e 004c7e 477290 92a0a3 */
 
-            #projects > div {
-                margin-bottom: 100px;
+            h1, h2, h3, h4, h5 {
+                font-weight: 300;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            #intro {
+                max-width: 45rem;
+                padding:   0 1rem;
+            }
+
+            p {
+                line-height: 1.45em;
+                text-align:  left;
+            }
+
+            #projects {
+                display:   flex;
+                flex-wrap: wrap;
+                gap:       2rem;
+                justify-content: center;
+            }
+
+            .project {
+                max-width:     25em;
+                padding:       0 1em;
+                border-radius: 0.3em;
+                text-align:    left;
+                
+                box-shadow: 
+                    rgba(0, 0, 0, 0.25) 5px 5px,
+                    rgba(0, 0, 0, 0.15) 10px 10px,
+                    rgba(0, 0, 0, 0.10) 15px 15px;
+                
+                background-color: rgba(255, 255, 255, 0.3);
             }
         </style>
     </head>
 
     <body>
-        <div id='octopus'>
+        <div id='octopus' class='bob'>
             <div id='head'>
                 <div></div>
             </div>
@@ -55,29 +89,32 @@
         </div>
         
         <h1>Nifty Octopus</h1>
+        <p id='intro'>Hey there! My name is Bryan and I like to build things. Below is a selection of projects that I would like to showcase. For a complete collection of my work feel free to browse GitHub and GitLab.</p>
 
-        <div class='project'>
-            <div class='header'>
-                <h3>Lychee List</h3>
+        <div id='projects'>
+            <div class='project'>
+                <div class='header'>
+                    <h4><a href=''>Lychee List</a></h4>
+                </div>
+
+                <p>A mobile-first Progressive Web App to create your grocery list from saved recipes</p>
             </div>
 
-            <p>This is the project description</p>
-        </div>
+            <div class='project'>
+                <div class='header'>
+                    <h4><a href=''>Represent</a></h4>
+                </div>
 
-        <div class='project'>
-            <div class='header'>
-                <h3>Represent</h3>
+                <p>A web app to compare the voting behavior of US congress members</p>
             </div>
 
-            <p>This is the project description</p>
-        </div>
+            <div class='project'>
+                <div class='header'>
+                    <h4><a href=''>Let it Snow</a></h4>
+                </div>
 
-        <div class='project'>
-            <div class='header'>
-                <h3>Let it Snow</h3>
+                <p>A simple snow simulation made with HTML Canvas and vanilla JavaScript</p>
             </div>
-
-            <p>This is the project description</p>
         </div>
     </body>
 </html>
