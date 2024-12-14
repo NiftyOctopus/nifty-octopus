@@ -1,0 +1,13 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS256",
+      "kid": "barclays-2024-12-14",
+      "n":   "AOv5QJ_ywbh4x-ksO__JEA9IyUYJs3t56nS_ieRq6tWK9dI13fQWNR6jH9U-EwH-xmA8vFWHAXJqv9EvrGDePd0phx6gKjAeCMItHhkR9Dq8A92c1KOFXnugPCWNGEHvaGp_rBBqhwmbPWArUm8B1-KqRWpYC3wimkpA1x-wo95ScFnOHH1rWThr8vZVFfeGbyRmzcGBvH_463JdgGiw6qE8itAprFzrh47wW6106TL9OZVPEEcsuSGe_rdycJYW8Jz4JrHCxWIHdqGog8XWqTgWrVs1vjz7w_SmWTYr9ACnYXyKncsEO0T4FCCUlX4HMVXsHmzAmSYX7UDQHNS0vG8",
+      "e":   "AQAB"
+    }
+  ]
+}
+  
