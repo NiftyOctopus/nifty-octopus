@@ -28,13 +28,26 @@
                 flex-direction:  column;
                 justify-content: flex-start;
                 align-items:     center;
+                gap:             4rem;
                 padding:         1rem 1rem 3rem 1em;
+            }
+
+            header {
+                display:         flex;
+                flex-direction:  column;
+                justify-content: center;
+                align-items:     center;
+                gap:             0.5rem;
             }
 
             /* Ocean Colors 0c6a9e 004c7e 477290 92a0a3 */
 
-            h1, h2, h3, h4, h5 {
+            h1, h2, h3 {
                 font-weight: 300;
+            }
+
+            h4, h5 {
+                font-weight: 400;
             }
 
             h1 {
@@ -47,25 +60,27 @@
             }
 
             p {
+                font-weight: 400;
                 line-height: 1.45em;
                 text-align:  left;
             }
 
             #projects {
-                display:   flex;
-                flex-wrap: wrap;
-                gap:       2rem;
+                display:         flex;
+                flex-wrap:       wrap;
+                gap:             3rem;
                 justify-content: center;
+                max-width:       100rem;
             }
 
             .project {
-                max-width:     25em;
-                padding:       0 1em;
-                border-radius: 0.3em;
+                max-width:     25rem;
+                padding:       0 1rem;
+                border-radius: 0.3rem;
                 text-align:    left;
                 
                 box-shadow: 
-                    rgba(0, 0, 0, 0.25) 5px 5px,
+                    rgba(0, 0, 0, 0.25) 5px  5px,
                     rgba(0, 0, 0, 0.15) 10px 10px,
                     rgba(0, 0, 0, 0.10) 15px 15px;
                 
@@ -75,47 +90,72 @@
     </head>
 
     <body>
-        <div id='octopus'>
-            <div id='head'>
-                <div></div>
+        <header>
+            <div id='octopus'>
+                <div id='head'>
+                    <div></div>
+                </div>
+                
+                <div id='legs'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
             
-            <div id='legs'>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        
-        <h1>Nifty Octopus</h1>
-        <p id='intro'>Hey there. My name is Bryan and I like to build things. Here are a few of my projects. To see more, feel free to browse through my <a href='https://github.com/NiftyOctopus'>GitHub</a> or <a href='https://gitlab.com/bchambers'>GitLab</a> profile.</p>
+            <h1>Nifty Octopus</h1>
 
-        <div id='projects'>
+            <p id='intro'>
+                My name is Bryan and sometimes I build things.
+                Here are a few of my favorites.
+                To see more, feel free to browse through my
+                <a href='https://github.com/NiftyOctopus'>GitHub</a> or
+                <a href='https://gitlab.com/bchambers'>GitLab</a> profile.
+            </p>
+        </header>
+
+        <main id='projects'>
             <div class='project'>
                 <div class='header'>
-                    <h4><a href='https://lychee.niftyoctopus.com'>Lychee List</a></h4>
-                </div>
-
-                <p>A mobile-first Progressive Web App to create your grocery list from saved recipes</p>
-            </div>
-
-            <div class='project'>
-                <div class='header'>
-                    <h4><a href='http://represent.bryanchambers.me'>Represent</a></h4>
-                </div>
-
-                <p>A web app to compare the voting behavior of US congress members</p>
-            </div>
-
-            <div class='project'>
-                <div class='header'>
-                    <h4><a href='https://snow.niftyoctopus.com'>Let it Snow</a></h4>
+                    <h4><a href='https://snow.niftyoctopus.com' target='_blank' rel='noopener noreferrer'>
+                        Let it Snow
+                    </a></h4>
                 </div>
 
                 <p>A simple snow simulation made with HTML Canvas and vanilla JavaScript</p>
             </div>
-        </div>
+
+            <div class='project'>
+                <div class='header'>
+                    <h4><a href='https://birthday.niftyoctopus.com' target='_blank' rel='noopener noreferrer'>
+                        Binary Birthday
+                    </a></h4>
+                </div>
+
+                <p>A fun and simple birthday guesser using binary search </p>
+            </div>
+
+            <div class='project'>
+                <div class='header'>
+                    <h4><a href='https://mbta.niftyoctopus.com' target='_blank' rel='noopener noreferrer'>
+                        MBTA Spotter
+                    </a></h4>
+                </div>
+
+                <p>Track live location of MBTA trains in the Boston area</p>
+            </div>
+
+            <div class='project'>
+                <div class='header'>
+                    <h4><a href='http://represent.bryanchambers.me' target='_blank' rel='noopener noreferrer'>
+                        Represent
+                    </a></h4>
+                </div>
+
+                <p>Compare the voting behavior of US congress members</p>
+            </div>
+        </main>
     </body>
 </html>
